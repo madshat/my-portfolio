@@ -53,7 +53,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #fdf0e9;
+  --bs-body-bg: #fff;
 }
 
 *,
@@ -594,6 +594,23 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+.botinterface {
+  width: 25%;
+  display: inline-block;
+  margin-right: 2.5rem;
+  height: auto;
+}
+
+.botdata {
+  width: 60%;
+  display: inline-block;
+  height: auto;
+}
+
+.portfolio-img {
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .img-thumbnail {
@@ -7714,7 +7731,7 @@ textarea.form-control-lg {
 
 .text-secondary {
   --bs-text-opacity: 1;
-  color: #391400 !important;
+  color: rgb(var(--bs-navbar-rgb)) !important;
 }
 
 .text-success {
@@ -11289,6 +11306,13 @@ html {
   scroll-padding-top: calc(4.5rem - 1px);
 }
 
+.linkedin-link {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
 .page-section {
   padding: 6rem 0;
 }
@@ -11314,9 +11338,9 @@ html {
   width: 100%;
   max-width: 7rem;
   height: 0.25rem;
-  background-color: #391400;
+  background-color: rgb(var(--bs-navbar-rgb));
   border-radius: 1rem;
-  border-color: #391400;
+  border-color: rgb(var(--bs-navbar-rgb));
 }
 .divider-custom .divider-custom-line:first-child {
   margin-right: 1rem;
@@ -11325,7 +11349,7 @@ html {
   margin-left: 1rem;
 }
 .divider-custom .divider-custom-icon {
-  color: #391400;
+  color: rgb(var(--bs-navbar-rgb));
   font-size: 2rem;
 }
 .divider-custom.divider-light .divider-custom-line {
@@ -11343,8 +11367,8 @@ html {
 .btn-social {
   border-radius: 100%;
   display: inline-flex;
-  width: 3.25rem;
-  height: 3.25rem;
+  width: 3rem;
+  height: 3rem;
   font-size: 1.25rem;
   justify-content: center;
   align-items: center;
@@ -11461,6 +11485,7 @@ html {
   max-width: 25rem;
   border-radius: 0.5rem;
   overflow: hidden;
+  margin-bottom: 0.6rem;
 }
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
@@ -11468,7 +11493,7 @@ html {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+  background-color: #17a2b8cc;
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
@@ -11508,4 +11533,20 @@ html {
 
 .copyright {
   background-color: #1a252f;
+}
+
+.portfolio-hover-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.portfolio-project-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0rem;
+  text-align: center;
+}
+
+.portfolio-text {
+  margin: 0 5rem 2rem;
 }
